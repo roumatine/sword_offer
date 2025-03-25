@@ -4,7 +4,7 @@ BinaryTreeNode* CreateBinaryTreeNode(double value) {
     BinaryTreeNode* pNode = new BinaryTreeNode();
     pNode->m_value = value;
     pNode->m_pleft = nullptr;
-    pNode->right = nullptr;
+    pNode->m_pright = nullptr;
     return pNode;
 }
 
