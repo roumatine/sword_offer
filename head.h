@@ -7,3 +7,4 @@
 #include <iostream>
 #include <stack>
 #include <assert.h>
+#include <vector>

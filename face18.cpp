@@ -1,33 +1,5 @@
 #include "face18.h"
 
-BinaryTreeNode* CreateBinaryTreeNode(double value) {
-    BinaryTreeNode* pNode = new BinaryTreeNode();
-    pNode->m_value = value;
-    pNode->m_pleft = nullptr;
-    pNode->m_pright = nullptr;
-    return pNode;
-}
-
-void ConnectTreeNodes(BinaryTreeNode* pParent, BinaryTreeNode* pLeft, BinaryTreeNode* pRight) {
-    if (pParent != nullptr) {
-        pParent->m_pleft = pLeft;
-        pParent->m_pright = pRight;
-    }
-}
-
-void DestroyTree(BinaryTreeNode* pRoot) {
-    if (pRoot != nullptr) {
-        BinaryTreeNode* pLeft = pRoot->m_pleft;
-        BinaryTreeNode* pRight = pRoot->m_pright;
-
-        delete pRoot;
-        pRoot = nullptr;
-
-        DestroyTree(pLeft);
-        DestroyTree(pRight);
-    }
-}
-
 void Test(char* testName, BinaryTreeNode* pRoot1, BinaryTreeNode* pRoot2, bool expected) {
     if (HasSubTree(pRoot1, pRoot2) == expected) {
         std::cout << testName << " passed." << std::endl;
