@@ -4,12 +4,15 @@
 #include <iostream>
 #include <exception>
 #include <cstring>
-#include <iostream>
 #include <stack>
 #include <assert.h>
 #include <vector>
 #include <array>
+#include <set>
+#include <functional>
 #include "Array.h"
 #include "List.h"
 #include "Tree.h"
 #include "BinaryTree.h"
+
+using namespace std;

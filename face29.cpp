@@ -10,15 +10,15 @@ void Test(char* testName, int* numbers, int length, int expectedValue, bool expe
         copy[i] = numbers[i];
 
     printf("Test for solution1: ");
-    int result = MoreThanHalfNum_Solution1(numbers, length);
-    if(result == expectedValue && g_bInputInvalid == expectedFlag)
+    int result = MoreThanHalfNumSolution1(numbers, length);
+    if(result == expectedValue && g_inputInvalid == expectedFlag)
         printf("Passed.\n");
     else
         printf("Failed.\n");
 
     printf("Test for solution2: ");
-    result = MoreThanHalfNum_Solution2(copy, length);
-    if(result == expectedValue && g_bInputInvalid == expectedFlag)
+    result = MoreThanHalfNumSolution2(copy, length);
+    if(result == expectedValue && g_inputInvalid == expectedFlag)
         printf("Passed.\n");
     else
         printf("Failed.\n");
