@@ -1,16 +1,16 @@
-#include "head.h"
+#include "face32.h"
 
 void Test(const char* testName, int n, int expected)
 {
     if(testName != nullptr)
         printf("%s begins: \n", testName);
     
-    if(NumberOf1Between1AndN_Solution1(n) == expected)
+    if(num_of_1_between1_and_solution1(n) == expected)
         printf("Solution1 passed.\n");
     else
         printf("Solution1 failed.\n"); 
     
-    if(NumberOf1Between1AndN_Solution2(n) == expected)
+    if(num_of_1_between1_solution2(n) == expected)
         printf("Solution2 passed.\n");
     else
         printf("Solution2 failed.\n"); 
