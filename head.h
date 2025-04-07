@@ -8,6 +8,7 @@
 #include <stack>
 #include <assert.h>
 #include <vector>
+#include <queue>
 #include <array>
 #include <set>
 #include <functional>
