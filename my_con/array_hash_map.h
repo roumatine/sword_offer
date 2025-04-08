@@ -39,7 +39,7 @@ public:
     void put(int key, string val) {
         Pair *pair = new Pair(key, val);
         int index = hashFunc(key);
-        buckets[index] = pair
+        buckets[index] = pair;
     }
 
     void remove(int key) {

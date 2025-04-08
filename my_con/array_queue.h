@@ -1,4 +1,4 @@
-#include "..\head.h"
+#include "..\head"
 
 class ArrayQueue {
     private:
