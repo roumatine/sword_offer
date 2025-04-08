@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 struct Pair {
 public:

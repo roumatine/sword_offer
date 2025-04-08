@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 void Permutation(char *pStr, char *pBegin) {
     if (*pBegin == '\0') { // 递归结束条件

@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 #include "face18.h"
 
 void MirrorRecursively(BinaryTreeNode *pNode) {

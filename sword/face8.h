@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 int MinInOrder(int *nums, int index1, int index2) {
     int result = nums[index1];

@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 int NumberOf1_Solution1(int n) {
     int count = 0;

@@ -21,7 +21,7 @@ void Test(char* testName, int* data, int n, int* expectedResult, int k)
 
     printf("Result for solution1:\n");
     int* output = new int[k];
-    GetLeastNumbers_Solution1(data, n, output, k);
+    GetLeastNumsSolution1(data, n, output, k);
     if(expectedResult != nullptr)
     {
         for(int i = 0; i < k; ++ i)
@@ -33,7 +33,7 @@ void Test(char* testName, int* data, int n, int* expectedResult, int k)
 
     printf("Result for solution2:\n");
     intSet leastNumbers;
-    GetLeastNumbers_Solution2(vectorData, leastNumbers, k);
+    GetLeasetNumsSolutsion2(vectorData, leastNumbers, k);
     printf("The actual output numbers are:\n");
     for(setIterator iter = leastNumbers.begin(); iter != leastNumbers.end(); ++iter)
         printf("%d\t", *iter);

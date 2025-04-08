@@ -13,6 +13,8 @@
 #include <set>
 #include <functional>
 #include <algorithm>
+#include <map>
+#include <unordered_map>
 #include "Array.h"
 #include "List.h"
 #include "Tree.h"

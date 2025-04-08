@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 void PrintMatrixInCircle(int **nums, int cols, int rows, int start) {
     int endX = cols - 1 - start;

@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 void PrintNumbr(char *num) {
     bool IsBegin = true;

@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 // ================solution1=========================
 
 int num_of_1(unsigned int n) {

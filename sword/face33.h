@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 const int Max_Num_len = 10;
 

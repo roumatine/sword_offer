@@ -1,5 +1,5 @@
 
-#include "head.h"
+#include "..\head.h"
 
 class LinkedListQueue {
 private:

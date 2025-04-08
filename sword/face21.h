@@ -1,6 +1,6 @@
 #pragma once
 
-#include "head.h"
+#include "..\head.h"
 
 template <typename T>class StackWithMin {
 public:

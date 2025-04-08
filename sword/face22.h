@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 bool IsPopOrder(const int* pPush, const int* pPop, int nLen) {
     bool possible = false;

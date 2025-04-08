@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 void GetLeastNumsSolution1(int *input, int n, int *output, int k) {
     if (input == nullptr || output == nullptr || k > n || n <= 0 || k <= 0) {

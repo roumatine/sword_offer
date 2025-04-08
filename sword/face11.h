@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 bool g_InvalidInput = false;
 bool equal(double num1, double num2);

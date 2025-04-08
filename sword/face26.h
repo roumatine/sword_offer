@@ -1,5 +1,5 @@
 #pragma once
-#include "head.h"
+#include "..\head.h"
 
 struct ComplexListNode
 {

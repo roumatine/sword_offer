@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 char First_not_repeating_char(const char* pstring) {
     if (pstring == nullptr) {
