@@ -23,4 +23,4 @@ vector<Vertex *> graphBFS(GraphAdjList &graph, Vertex *startVet) {
     }
     // 返回顶点遍历序列
     return res;
-}
+};
