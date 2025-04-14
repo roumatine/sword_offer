@@ -1,4 +1,4 @@
-#include "head.h"
+#include "..\head.h"
 
 priority_queue<int, vector<int>, greater<int>> topHeap(vector<int> &nums, int k) {
     priority_queue<int, vector<int>, greater<int>> heap;
