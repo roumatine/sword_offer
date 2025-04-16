@@ -18,5 +18,4 @@ void bucket_sort(vector<int> &nums) {
             nums[i++] = num;
         }
     }
-
 }
