@@ -1,7 +1,7 @@
 #include "..\head.h"
 
 /* 构建二叉树：分治 */
-TreeNode *dfs(vector<int> &preorder, unordered_map<int, int> &inorderMap, int i, int l, int r) {
+treeNode *dfs(vector<int> &preorder, unordered_map<int, int> &inorderMap, int i, int l, int r) {
     // 子树区间为空时终止
     if (r - l < 0)
         return NULL;
