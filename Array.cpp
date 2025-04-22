@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <iostream>
 #include "Array.h"
 #include <exception>
 
@@ -17,8 +18,10 @@ void Swap(int* num1, int* num2)
 
 int Partition(int data[], int length, int start, int end)
 {
-    if(data == nullptr || length <= 0 || start < 0 || end >= length)
-        throw new std::exception("Invalid Parameters");
+    if(data == nullptr || length <= 0 || start < 0 || end >= length){
+        // throw new std::exception("Invalid Parameters.");
+        return -1;
+    }
 
     int index = RandomInRange(start, end);
     Swap(&data[index], &data[end]);
