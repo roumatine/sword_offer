@@ -1,8 +1,8 @@
-#include "..\Utilities\BinaryTree.h"
 #include <exception>
 #include <cstdio>
 #include <cstdlib>
 #include <cstring>
+#include "..\head.h"
 
 
 BinaryTreeNode* ConstructCore(int* startPreoder, int* endPreorder, int**startInorder, int *endInorder) {
