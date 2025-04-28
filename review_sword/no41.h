@@ -6,3 +6,24 @@ no.41 和为S的连续整数序列
 
 #include "..\head.h"
 
+vector<vector<int>> FindContinuousSequence(int sum) {
+    vector<vector<int>> res;
+    int low = 1;
+    int high = 2;
+    while (low < high) {
+        int sumTmp = (low + high) * (high - low + 1) / 2;
+        if (sum == sumTmp) {
+            vector<int> tmp;
+            for (int i = low; i <= high; ++i) {
+                tmp.push_back(i);
+            }
+            res.push_back(std::move(tmp));
+            low ++;
+        } else if (sumTmp < sum) {
+            high ++;
+        } else {
+            low ++;
+        }
+    }
+    return std::move(res);
+}
