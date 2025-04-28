@@ -5,6 +5,13 @@ struct ListNode
     ListNode* m_pNext;
 };
 
+struct Listnode {
+    int val;
+    struct  Listnode *next;
+    Listnode(int x) : val(x), next(nullptr) {}  
+};
+
+
 __declspec( dllexport ) ListNode* CreateListNode(int value);
 __declspec( dllexport ) void ConnectListNodes(ListNode* pCurrent, ListNode* pNext);
 __declspec( dllexport ) void PrintListNode(ListNode* pNode);

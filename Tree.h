@@ -10,8 +10,8 @@ struct TreeNode
 
 struct treeNode {
     int val;          // 节点值
-    TreeNode *left;   // 左子节点指针
-    TreeNode *right;  // 右子节点指针
+    treeNode *left;   // 左子节点指针
+    treeNode *right;  // 右子节点指针
     treeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
