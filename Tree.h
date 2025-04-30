@@ -15,6 +15,16 @@ struct treeNode {
     treeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 };
 
+struct TreeLinkNode {
+    int val;
+    struct TreeLinkNode *left;
+    struct TreeLinkNode *right;
+    struct TreeLinkNode *next;
+    TreeLinkNode(int x) :val(x), left(NULL), right(NULL), next(NULL) {
+        
+    }
+};
+
 __declspec( dllexport ) TreeNode* CreateTreeNode(int value);
 __declspec( dllexport ) void ConnectTreeNodes(TreeNode* pParent, TreeNode* pChild);
 __declspec( dllexport ) void PrintTreeNode(const TreeNode* pNode);
