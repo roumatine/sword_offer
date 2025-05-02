@@ -8,7 +8,7 @@ int thirdMax(vector<int> &nums) {
         if (firstNum < a) {
             thirdNum = secondNum;
             secondNum = firstNum;
-            firstNum = 0;
+            firstNum = a;
         } else if (firstNum > a && secondNum < a) {
             thirdNum = secondNum;
             secondNum = a;
