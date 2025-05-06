@@ -16,7 +16,9 @@
 #include <map>
 #include <math.h>
 #include <unordered_map>
+#include <unordered_set>
 #include <bitset>
+#include <numeric>
 #include <bits/stdc++.h>
 #include "Array.h"
 #include "List.h"
