@@ -13,7 +13,7 @@ public:
             return false;
         }
         while (i + 1 < n && arr[i] > arr[i + 1]) {
-            i++；
+            i++;
         }
         return i == n - 1;
     }
