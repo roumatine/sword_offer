@@ -20,6 +20,10 @@
 #include <bitset>
 #include <numeric>
 #include <bits/stdc++.h>
+#include <mutex>
+#include <thread>
+#include <atomic>
+#include <condition_variable>
 #include "Array.h"
 #include "List.h"
 #include "Tree.h"
