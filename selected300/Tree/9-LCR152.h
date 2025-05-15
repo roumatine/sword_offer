@@ -20,23 +20,23 @@ private:
 };
 
 
-class Solution {
-public:
-    bool verifyTreeOrder(vector<int>& postorder) {
-        if (postorder.empty())
-            return true;
-        return verifyTreeOrderCore(postorder, 0, postorder.size() - 1);
-    }
-    bool verifyTreeOrderCore(vector<int> &postorder, int start, int end) {
-        if (start >= end)
-            return true;
-        int left = start;
-        while (left < end && postorder[left] < postorder[end])
-            ++left;
-        for (int i = left; i < end; ++i) {
-            if (postorder[i] <= postorder[end])
-                return false;
-        }
-        return verifyTreeOrderCore(postorder, start, left - 1) && verifyTreeOrderCore(postorder, left, end - 1);
-    }
-};
+// class Solution2 {
+// public:
+//     bool verifyTreeOrder(vector<int>& postorder) {
+//         if (postorder.empty())
+//             return true;
+//         return verifyTreeOrderCore(postorder, 0, postorder.size() - 1);
+//     }
+//     bool verifyTreeOrderCore(vector<int> &postorder, int start, int end) {
+//         if (start >= end)
+//             return true;
+//         int left = start;
+//         while (left < end && postorder[left] < postorder[end])
+//             ++left;
+//         for (int i = left; i < end; ++i) {
+//             if (postorder[i] <= postorder[end])
+//                 return false;
+//         }
+//         return verifyTreeOrderCore(postorder, start, left - 1) && verifyTreeOrderCore(postorder, left, end - 1);
+//     }
+// }
