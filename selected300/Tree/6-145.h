@@ -27,7 +27,7 @@ vector<int> postorderTraversalCore(vector<int> &res, TreeNode *root) {
 
 // 模板
 vector<int> preorderTraversal(TreeNode *root) {
-    stack<treeNode *> s;
+    stack<TreeNode *> s;
     vector<int> res;
     while (root != nullptr || !s.empty()) {
         if (root != nullptr) {
