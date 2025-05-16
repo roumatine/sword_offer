@@ -9,7 +9,7 @@ public:
         combinationsSumCore(res, candidates, target, tmp, 0, 0);
         return res;
     }
-    void combinationsSumCore(vector<vector<int> &res, vector<int> &candidates, int target, vector<int> &tmp, int sum, int begin) {
+    void combinationsSumCore(vector<vector<int>> &res, vector<int> &candidates, int target, vector<int> &tmp, int sum, int begin) {
         if (sum == target)
             res.push_back(tmp);
         else {
