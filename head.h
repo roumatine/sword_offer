@@ -28,5 +28,5 @@
 #include "List.h"
 #include "Tree.h"
 #include "BinaryTree.h"
-
+#pragma once
 using namespace std;
