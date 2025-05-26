@@ -1,7 +1,6 @@
 #include <list>
 #include <stack>
 #include <cstdio>
-#include <iostream>
 #include <exception>
 #include <cstring>
 #include <string>
@@ -24,6 +23,7 @@
 #include <thread>
 #include <atomic>
 #include <condition_variable>
+#include <iostream>
 #include "Array.h"
 #include "List.h"
 #include "Tree.h"
