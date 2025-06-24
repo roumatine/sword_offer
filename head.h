@@ -7,6 +7,7 @@
 #include <stack>
 #include <assert.h>
 #include <vector>
+#include <cctype>
 #include <queue>
 #include <array>
 #include <set>
