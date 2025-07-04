@@ -13,6 +13,15 @@ struct Listnode
     Listnode(int x) : val(x), next(nullptr) {}
 };
 
+struct ListNode
+{
+    int val;
+    ListNode *next;
+    ListNode() : val(0), next(nullptr) {}
+    ListNode(int x) : val(x), next(nullptr) {}
+    ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+
 __declspec(dllexport) ListNode *CreateListNode(int value);
 __declspec(dllexport) void ConnectListNodes(ListNode *pCurrent, ListNode *pNext);
 __declspec(dllexport) void PrintListNode(ListNode *pNode);
