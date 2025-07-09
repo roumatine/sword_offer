@@ -22,6 +22,7 @@
 #include <bits/stdc++.h>
 #include <mutex>
 #include <thread>
+#include <ranges>
 #include <atomic>
 #include <condition_variable>
 #include <iostream>
