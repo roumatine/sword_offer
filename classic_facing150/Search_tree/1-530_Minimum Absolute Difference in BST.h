@@ -22,3 +22,28 @@ public:
         return ans;
     }
 };
+
+class Solution
+{
+public:
+    int getMinimumDifference(TreeNode *root)
+    {
+        dfs(root);
+        return ans;
+    }
+
+private:
+    int ans = INT_MAX;
+    int pre = INT_MIN / 2;
+    void dfs(TreeNode *node)
+    {
+        if (node == nullptr)
+        {
+            return;
+        }
+        dfs(node->left);
+        ans = min(ans, node->val - pre);
+        pre = node->val;
+        dfs(node->right);
+    }
+};
