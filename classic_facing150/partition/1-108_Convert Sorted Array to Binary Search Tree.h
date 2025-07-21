@@ -17,5 +17,6 @@ private:
         }
         int m = left + (right - left) / 2; // 比直接(left+right)/2更安全
         return new TreeNode(nums[m], dfs(nums, left, m), dfs(nums, m + 1, right));
+        // 根节点nums[m]，左树dfs(nums, left, m), 右树dfs(nums, m + 1, right)
     }
 };
