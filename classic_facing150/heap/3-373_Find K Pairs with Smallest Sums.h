@@ -15,6 +15,14 @@ public:
         } // pq.emplace(-nums1[0], nums2[0], 0, 0);
         while (ans.size() < k)
         {
+            auto [_, i, j] = pq.top();
+            pq.pop();
+            ans.push_back({nums1[i], nums2[j]});
+            if (j + 1 < m)
+            {
+                pq.emplace(-nums1[i] - nums2[j + 1], i, j + 1);
+            }
         }
+        return ans;
     }
 };
