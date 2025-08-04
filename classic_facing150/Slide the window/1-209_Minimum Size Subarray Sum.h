@@ -1,18 +1,23 @@
 #include "..\..\head.h"
 
-class Solution1 {
+class Solution1
+{
 public:
-    int minSubArrayLen(int target, vector<int>& nums) {
+    int minSubArrayLen(int target, vector<int> &nums)
+    {
         int n = nums.size();
         int res = n + 1;
         int sum = 0, left = 0;
-        for (int right = 0; right < n; right++) {
+        for (int right = 0; right < n; right++)
+        {
             sum += nums[right];
-            while (sum - nums[left] >= target) {
+            while (sum - nums[left] >= target)
+            {
                 sum -= nums[left];
                 left++;
             }
-            if (sum >= target) {
+            if (sum >= target)
+            {
                 res = min(res, right - left + 1);
             }
         }
@@ -20,24 +25,27 @@ public:
     }
 };
 
-class Solution2 {
+class Solution2
+{
 public:
-    int minSubArrayLen(int target, vector<int>& nums) {
+    int minSubArrayLen(int target, vector<int> &nums)
+    {
         int n = nums.size();
         int res = n + 1;
         int sum = 0, left = 0;
-        for (int right = 0; right < n; right++) {
+        for (int right = 0; right < n; right++)
+        {
             sum += nums[right];
-            while (sum >= target) {
+            while (sum >= target)
+            {
                 res = min(res, right - left + 1);
                 sum -= nums[left];
-                left ++;
+                left++;
             }
         }
         return res <= n ? res : 0;
     }
 };
-
 
 // 有些是在内部循环外面最后更新最优解(第一种解法)
 // 有些窗口是在内部循环里更新最优解(第2种解法),
