@@ -24,7 +24,7 @@ private:
         int right = nums.size() - 1;
         while (left <= right)
         {
-            int mid = left + (right - left) / 2; // ((right - left) >> 1) + left;
+            int mid = left + (right - left) / 2; // ((right - left) >> 1);
             if (nums[mid] < target)
             {
                 left = mid + 1; // 范围缩小到 [mid+1, right]
