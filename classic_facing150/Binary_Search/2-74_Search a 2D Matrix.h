@@ -12,7 +12,7 @@ public:
 
         while (left + 1 < right)
         {
-            int mid = (right - left) >> 1;
+            int mid = left + ((right - left) >> 1);
             int x = matrix[mid / n][mid % n];
             if (x == target)
             {

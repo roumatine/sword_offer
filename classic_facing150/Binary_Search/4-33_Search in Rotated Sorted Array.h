@@ -23,7 +23,7 @@ private:
         // 这个条件确保当left和right相邻时循环终止
         // 这种写法避免了常见的二分查找中的边界问题（如无限循环）
         {
-            int mid = (right - left) >> 1;
+            int mid = left + ((right - left) >> 1);
             if (nums[mid] < nums.back())
             {
                 right = mid;
