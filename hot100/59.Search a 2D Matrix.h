@@ -18,7 +18,7 @@ public:
             {
                 return true;
             }
-            if (x < target)
+            else if (x < target)
             {
                 left = mid;
             }
