@@ -50,4 +50,49 @@ public:
         }
         return f[n][m];
     }
+
+    // 滚动数组
+    int minDistance(string word1, string word2)
+    {
+        int n = word1.size();
+        int m = word2.size();
+
+        vector f(2, vector<int>(m + 1));
+        for (int j = 0; j < m; j++)
+        {
+            f[0][j + 1] = j + 1;
+        }
+
+        for (int i = 0; i < n; i++)
+        {
+            f[(i + 1) % 2][0] = i + 1;
+            for (int j = 0; j < m; j++)
+            {
+                f[(i + 1) % 2][j + 1] = word1[i] == word2[j] ? f[i % 2][j] : min({f[i % 2][j + 1], f[(i + 1) % 2][j], f[i % 2][j]}) + 1;
+            }
+        }
+        return f[n % 2][m];
+    }
+    // 一个数组
+    int minDistance(string word1, string word2)
+    {
+        int m = word2.size();
+        vector<int> f(m + 1);
+        for (int j = 0; j < m; j++)
+        {
+            f[j + 1] = j + 1;
+        }
+        for (char x : word1)
+        {
+            int pre = f[0];
+            f[0]++;
+            for (int j = 0; j < m; j++)
+            {
+                int tmp = f[j + 1];
+                f[j + 1] = x == word2[j] ? pre : min({f[j + 1], f[j], pre}) + 1;
+                pre = tmp;
+            }
+        }
+        return f[m];
+    }
 };
