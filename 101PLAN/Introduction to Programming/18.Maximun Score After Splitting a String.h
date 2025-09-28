@@ -48,4 +48,26 @@ public:
         }
         return ans;
     }
+
+    int maxScore(string s)
+    {
+        int cntl0 = 0, cntr1 = 0, n = s.size();
+        for (int i = 0; i < n; i++)
+        {
+            char c = s[i];
+            if (c == '1')
+                cntr1++;
+        }
+        int ans = 0;
+        for (int i = 0; i < n - 1; i++)
+        {
+            char c = s[i];
+            if (c == '0')
+                cntl0++;
+            else
+                cntr1--;
+            ans = max(ans, cntl0 + cntr1);
+        }
+        return ans;
+    }
 };
